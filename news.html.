@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | TRUTH IN INK</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      margin: 0;
+    }
+
+    header {
+      background: #b5121b;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .article-card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #b5121b;
+    }
+
+    .article-card a {
+      color: #b5121b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TRUTH IN INK</h1>
+    <p>NEWS AND ARTICLES</p>
+    <a class="back" href="index.html">← Back to Homepage</a>
+  </header>
+
+  <main>
+    <h2>Latest Articles</h2>
+
+    <div class="article-card">
+      <h3>AI in Education: Helpful Tool or Learning Threat?</h3>
+      <p>
+        How excessive AI use raises concerns about creativity,
+        critical thinking, and reading comprehension.
+      </p>
+      <a href="ai-in-education.html">Read Full Article →</a>
+    </div>
+
+  </main>
+
+</body>
+</html>
