@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TRUTH IN INK | School Journalism</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #171717;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111111;
+      color: white;
+      padding: 22px 8%;
+      border-bottom: 5px solid #d71920;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #e3262e;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #ff4545;
+    }
+
+    .hero {
+      background: #171717;
+      color: white;
+      padding: 90px 8%;
+      text-align: center;
+      border-bottom: 8px solid #d71920;
+    }
+
+    .tagline {
+      color: #ff4444;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ed252d;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 28px;
+      color: #dddddd;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #d71920;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #d71920;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: transparent;
+      color: white;
+    }
+
+    .breaking {
+      background: #d71920;
+      color: white;
+      padding: 12px 8%;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 13px;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .section-label {
+      color: #d71920;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    section h2 {
+      font-family: Georgia, serif;
+      font-size: 34px;
+      margin: 5px 0 10px;
+    }
+
+    .intro {
+      color: #666666;
+      margin-bottom: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 27px;
+      border-top: 4px solid #d71920;
+      box-shadow: 0 4px 15px #0000000d;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-family: Georgia, serif;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666666;
+      font-size: 14px;
+    }
+
+    #news {
+      background: white;
+    }
+
+    .news-item {
+      padding: 22px 0;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .news-item span {
+      color: #d71920;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .news-item h3 {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      margin: 6px 0;
+    }
+
+    .news-item p {
+      color: #666666;
+    }
+
+    #about {
+      background: #eeeeee;
+      text-align: center;
+    }
+
+    #about p {
+      max-width: 650px;
+      margin: 15px auto 0;
+      color: #555555;
+    }
+
+    footer {
+      background: #111111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      border-top: 5px solid #d71920;
+    }
+
+    footer strong {
+      font-family: Georgia, serif;
+      letter-spacing: 2px;
+    }
+
+    footer p {
+      color: #bbbbbb;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">TRUTH <span>IN</span> INK.</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#news">Latest News</a>
+      <a href="#sections">Sections</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="tagline">The Voice of the Students</div>
+
+      <h1>TRUTH IN <span>INK.</span></h1>
+
+      <p>
+        Uncovering stories, sharing perspectives, and giving
+        students a voice. Every word matters. Every story counts.
+      </p>
+
+      <a href="#news" class="button">EXPLORE OUR STORIES →</a>
+    </section>
+
+    <div class="breaking">
+      INK WITH PURPOSE. TRUTH WITHOUT FEAR.
+    </div>
+
+    <section id="news">
+      <div class="section-label">Stay Informed</div>
+      <h2>Latest Stories</h2>
+      <p class="intro">
+        Discover the stories, ideas, and issues that matter to students.
+      </p>
+
+      <div class="news-item">
+        <span>Editorial</span>
+        <h3>The Power of Student Voices</h3>
+        <p>
+          Student journalism gives young people the opportunity
+          to speak up, question issues, and inspire change.
+        </p>
+      </div>
+
+      <div class="news-item">
+        <span>Campus News</span>
+        <h3>What's Happening on Campus?</h3>
+        <p>
+          Stay connected with school activities, announcements,
+          and the achievements of fellow students.
+        </p>
+      </div>
+
+      <div class="news-item">
+        <span>Feature</span>
+        <h3>Stories Beyond the Headlines</h3>
+        <p>
+          Meet the people and discover the experiences that
+          make our school community unique.
+        </p>
+      </div>
+    </section>
+
+    <section id="sections">
+      <div class="section-label">Explore</div>
+      <h2>Our Sections</h2>
+      <p class="intro">
+        Different perspectives. One commitment to truth.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">📰</div>
+          <h3>News</h3>
+          <p>Campus updates and important events that keep students informed.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">✍️</div>
+          <h3>Editorial</h3>
+          <p>Opinions, arguments, and calls for meaningful change.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📖</div>
+          <h3>Feature</h3>
+          <p>Human-interest stories that inform, inspire, and connect.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📸</div>
+          <h3>Photojournalism</h3>
+          <p>Powerful moments and real stories captured through photographs.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📽</div>
+          <h3>Videos</h3>
+          <p>Documents,realities, the truth inside a frame.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🏆</div>
+          <h3>Sports</h3>
+          <p>Game highlights, student athletes, and campus competitions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-label">Who We Are</div>
+      <h2>About Truth in Ink</h2>
+      <p>
+        TRUTH IN INK is a student-centered journalism website
+        dedicated to responsible reporting, honest storytelling,
+        critical thinking, and freedom of expression.
+        We believe every story deserves to be told with accuracy,
+        fairness, and integrity.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>TRUTH IN INK.</strong>
+    <p>Ink with purpose. Truth without fear.</p>
+    <p>© 2026 TRUTH IN INK. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
