@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Screens Cannot Replace Students' Thinking | TRUTH IN INK</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,39 +14,45 @@
       margin: 0;
       line-height: 1.8;
     }
+
     header {
       background: #b5121b;
       color: white;
       padding: 25px;
       text-align: center;
     }
+
     main {
       max-width: 800px;
       margin: 30px auto;
       padding: 25px;
       background: white;
     }
+
     h2 {
       color: #b5121b;
     }
-    p {
+
+    main p {
       margin-bottom: 24px;
     }
+
     a {
       color: #b5121b;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>TRUTH IN INK</h1>
-    <p>EDITORIAL AND NEWS</p>
+    <p>NEWS AND ARTICLES</p>
   </header>
 
   <main>
     <h2>Screens Cannot Replace Students' Thinking</h2>
 
-    <p>A keynote speaker and journalism coach, Xydrone Cawaling, warns that excessive dependence on artificial intelligence (AI) may weaken students' critical thinking, creativity, and reading comprehension. He urges schools to prioritize responsible AI use and independent learning.</p>
+    <p>A keynote speaker and journalism coach, Xydrone Cawaling, warns that excessive dependence on artificial intelligence (AI) may weaken students' critical thinking, creativity, and reading comprehension, urging schools to prioritize responsible AI use and independent learning.</p>
 
     <p>A keynote speaker raised concerns about students becoming overly dependent on artificial intelligence (AI), warning that it may affect their ability to think critically and learn independently.</p>
 
